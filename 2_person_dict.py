@@ -9,10 +9,13 @@ person["pets"] = {"dog": "Fido", "cat": "Sox"}
 #print(person)
 
 # print out the name of the second child
+list_of_children = person['children']
+print(list_of_children[1])
 
+print(person['children'][1])
 
 # print out the name of the cat
-
+print(person['pets']['cat'])
 
 
 # use a loop to print out the names of each child
