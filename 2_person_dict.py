@@ -20,8 +20,15 @@ print(person['pets']['cat'])
 
 # use a loop to print out the names of each child
 
-
+for i in person['children']:
+    print(i)
 
 
 # use a loop to print out the pets in the following format:
 # The type of pet is: dog and the name of the pet is: Fido
+
+for k in person['pets']:
+    print(f'The type of pet is: {k} and the name of the pet is: {person["pets"][k]}')
+
+for k,v in person["pets"].items():
+    print(f'The type of pet is: {k} and the name of the pet is: {v}')
