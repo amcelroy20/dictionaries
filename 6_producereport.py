@@ -207,3 +207,18 @@ ProduceDictionary={
     }
 }
 
+
+for i in ProduceDictionary:
+
+    x = (f'{ProduceDictionary[i]["cost"]*ProduceDictionary[i]["amt_sold"]:,.2f}')
+    y = (f'{ProduceDictionary[i]["total"]:,.2f}')
+
+    if x == y:
+        next
+    else:
+        print(f'Produce name: {i}')
+        print(f'Caluculated Total: ${x}')
+        print(f'Stated Total: ${y}')
+        print(f'\n\n')
+
+
